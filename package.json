@@ -1,0 +1,53 @@
+{
+  "name": "hardhat-circom-starter",
+  "version": "1.0.0",
+  "description": "ZK-Snarks with Circom, hardhat and typescript",
+  "author": {
+    "name": "Ganesh Anantwar",
+    "email": "ganesh.anantwar@outlook.com"
+  },
+  "keywords": [
+    "zk-snarks",
+    "zksnarks",
+    "zk-proof",
+    "circom",
+    "zksnark",
+    "zk",
+    "snarks",
+    "snark",
+    "zkp",
+    "zk-proofs",
+    "zk-snark",
+    "zk-snarks",
+    "plonk",
+    "powers-of-tau",
+    "circuits",
+    "verifier",
+    "prover",
+    "BN254",
+    "BN128",
+    "alt-bn128"
+  ],
+  "scripts": {
+    "install": "bash ./scripts/bash/0_install_circom.sh",
+    "setup": "bash ./scripts/bash/1_plonk_setup.sh",
+    "build": "bash ./scripts/bash/2_build_circuits.sh && npx hardhat compile",
+    "test": "npx hardhat test",
+    "lint": "echo \"work in progress\""
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@types/node": "^18.15.3",
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "ffjavascript": "^0.2.59",
+    "snarkjs": "^0.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.10.0"
+  }
+}
